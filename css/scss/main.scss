@@ -1,0 +1,363 @@
+$maincolor: #3498db;
+$parcolor: #2f3192;
+$mainfonts: 18px;
+* {
+}
+body {
+}
+/* Start upper bar */
+.upper-bar {
+  padding: 10px 0px;
+  .container {
+    border-bottom: 1px solid #999;
+
+    font-weight: bold;
+  }
+  span {
+    font-size: $mainfonts - 2;
+    color: $parcolor;
+  }
+  i {
+    color: $maincolor;
+  }
+}
+/* End upper bar */
+/* start nav */
+nav {
+  font-size: $mainfonts;
+  .container {
+    .navbar-collapse {
+      .navbar-nav {
+        /* .active > .nav-link :hover {
+          color: #fff !important;
+        }*/
+        .nav-link {
+          color: $parcolor;
+          font-size: $mainfonts;
+        }
+      }
+      .naibar-icon {
+        button {
+          margin: 0;
+          height: 30px;
+          line-height: 30px;
+          text-align: center;
+          width: 100px;
+          padding: 0 10px;
+        }
+        .language {
+          background-color: $maincolor;
+          color: #fff;
+          width: 40px;
+        }
+      }
+    }
+  }
+}
+/* end nav */
+/* start form-sine-in */
+.parint-form-sine-in {
+  position: relative;
+  width: 300px;
+  .form-sine-in {
+    position: absolute;
+    top: 10px;
+    right: -700px;
+    display: none;
+    width: 300px;
+    z-index: 99;
+    label {
+      color: #fff;
+    }
+  }
+}
+
+/* end form-sine-in */
+/* start slider */
+.slider {
+  .carousel-inner {
+    display: flex;
+    align-items: center;
+    //justify-self: center;
+    .slider-text {
+      position: absolute;
+      left: 12%;
+      color: #fff;
+      z-index: 4;
+      max-width: 500px;
+      p {
+        font-size: $mainfonts;
+      }
+    }
+    .overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 2;
+      background-image: linear-gradient(-115deg, #3498dbb4, #ffffff00);
+    }
+  }
+  .carousel-item {
+    background-size: cover;
+  }
+  .carousel-one {
+    background-image: url(../images/The-court.jpg);
+  }
+  .carousel-tow {
+    background-image: url(../images/The-court-1.jpg);
+  }
+  .carousel-three {
+    background-image: url(../images/The-court-2.jpg);
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    z-index: 3;
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      border: 1px solid #fff;
+      width: 30px;
+      height: 30px;
+      padding: 10px;
+      border-radius: 50%;
+      background-color: $parcolor;
+    }
+  }
+  .carousel-indicators li {
+    height: 5px;
+    cursor: pointer;
+  }
+}
+/* courses */
+.courses {
+  padding: 50px 0px;
+  .h1 {
+    margin-bottom: 20px;
+    padding: 50px 0px;
+  }
+  .courses-row {
+    img {
+      width: 100%;
+    }
+    .row {
+      margin: 0;
+      .col-sm {
+        padding: 0;
+        overflow: hidden;
+        .item {
+          display: flex;
+          align-items: center;
+          justify-self: center;
+          .overlay,
+          .overlay-part {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            color: #fff;
+
+            .text {
+              position: relative;
+              top: 50%;
+              left: 50%;
+              z-index: 4;
+              text-align: center;
+              transform: translate(-50%, -50%);
+              -webkit-transform: translate(-50%, -50%);
+              -moz-transform: translate(-50%, -50%);
+              -ms-transform: translate(-50%, -50%);
+              -o-transform: translate(-50%, -50%);
+            }
+          }
+          .overlay {
+            background-color: #2f3192c2;
+          }
+          .overlay-part {
+            background-color: #3498dbb2;
+          }
+        }
+      }
+    }
+  }
+}
+/* start blog */
+.blog {
+  margin: 70px auto;
+  .h3 {
+    color: $parcolor;
+  }
+}
+/* end blog */
+/* start Our-mission */
+.Our-mission {
+  .mission-box {
+    position: relative;
+    .mission-icon {
+      padding: 10px;
+      position: absolute;
+      top: -50px;
+      left: 100px;
+      border: 3px dotted $maincolor;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      z-index: 2;
+      background-color: #fff;
+      i {
+        color: $maincolor;
+      }
+    }
+    .box {
+      background-color: $maincolor;
+      color: #fff;
+      padding: 50px 20px;
+      height: 250px;
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+
+      &:hover {
+        background-color: #fff;
+        color: $maincolor;
+        border: 1px solid $maincolor;
+      }
+    }
+  }
+}
+/* end Our-mission */
+/* start testimonial */
+.testimonial {
+  margin: 70px 0px;
+  color: #fff;
+  background-color: $maincolor;
+  .h3 {
+    padding: 20px 0px 0px;
+  }
+}
+/* end testimonial */
+/* start Our clients */
+.Our-clients {
+  margin: 70px 0px;
+  .h2 {
+    color: $parcolor;
+    padding-bottom: 50px;
+  }
+}
+/* end Our clients */
+footer {
+  background-color: $maincolor;
+  margin-top: 50px;
+  padding: 20px 0;
+  color: #fff;
+  ul {
+    li {
+      padding: 10px 0px;
+      font-size: $mainfonts;
+    }
+  }
+  .form-style {
+    margin: 10px 0;
+  }
+  .footer-down {
+    border-top: 1px solid #fff;
+    padding: 40px 0px 0px 0px;
+  }
+}
+/* page-call */
+.slider-page-sign {
+  background-image: url(../../images/The-court-2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  //height: calc(100vh / 2);
+}
+.page-call {
+  margin: 80px 0px;
+}
+/* page-call */
+/* gallery page */
+.slider-page-gallery {
+  background-image: url(../../images/slider/slider-page-gallery.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 70px 0px;
+  //height: calc(100vh / 2);
+}
+.minister {
+  .photo-box {
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+}
+/* page call us*/
+.slider-page-calll-us {
+  background-image: url(../../images/slider/slider-page-call-us.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 70px 0px;
+}
+.box-coll-us {
+  .h2 {
+    color: $parcolor;
+    padding-bottom: 50px;
+  }
+  .icon-info {
+    height: 50px;
+    width: 20%;
+    line-height: 20px;
+    padding: 10px;
+    margin: 30px auto;
+    background-color: $maincolor;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+
+    i {
+      color: #fff;
+    }
+  }
+  ul {
+    li {
+      padding: 10px 0px;
+    }
+  }
+}
+/* page courses */
+.slider-page-courses {
+  background-image: url(../../images/slider/slider-page-courses.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 70px 0px;
+}
+.courses-box {
+  .h1 {
+    color: $parcolor;
+  }
+  .box {
+    margin: 70px 0px;
+    color: $parcolor;
+  }
+}
+/* page benefits */
+.slider-page-benefits {
+  background-image: url(../../images/slider/slider-page-benefits.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 70px 0px;
+}
+.benefits {
+  color: $parcolor;
+}
